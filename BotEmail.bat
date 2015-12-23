@@ -7,7 +7,7 @@ set datetime=%date% %time%
 if exist datetime.js del datetime.js
 echo TargetDate = "%datetime%";>datetime.js
 timeout /t 1 >nul
-::git add datetime.js
-::git commit -m "Beep Boop"
-::git push origin gh-pages
+git add datetime.js
+git commit -m "Beep Boop"
+git push origin gh-pages
 pause >nul|(echo I've updated your website for you. &echo [Enter]- "Okay MailBot301")
