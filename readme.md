@@ -1,0 +1,1 @@
+I took so long to make the script to rewrite the date in the original html file, but a few hours later I streamlined it to be so damn simple that I hate myself.
