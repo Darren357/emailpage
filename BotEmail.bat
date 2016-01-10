@@ -10,4 +10,4 @@ timeout /t 1 >nul
 git add datetime.js
 git commit -m "Beep Boop"
 git push origin gh-pages
-runas /user:# "" >nul 2>&1 |(echo I've updated your website for you. &echo  [Enter]- "Okay MailBot301")
+runas /user:# "" >nul 2>&1 |(echo I've updated your website for you. &echo. &echo  [Enter]- "Okay MailBot301")
