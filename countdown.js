@@ -26,25 +26,7 @@ function putspan(backcolor, forecolor) {
  document.write("<span id='cntdwn' style='background-color:" + backcolor + 
                 "; color:" + forecolor + "'></span>");
 }
-if (typeof(BackColor)=="undefined")
-  BackColor = "white";
-if (typeof(ForeColor)=="undefined")
-  ForeColor= "black";
-if (typeof(TargetDate)=="undefined")
-  TargetDate = "12/31/2020 5:00 AM";
-if (typeof(DisplayFormat)=="undefined")
-  DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
-if (typeof(CountActive)=="undefined")
-  CountActive = true;
-if (typeof(FinishMessage)=="undefined")
-  FinishMessage = "";
-if (typeof(CountStepper)!="number")
-  CountStepper = -1;
-if (typeof(LeadingZero)=="undefined")
-  LeadingZero = true;
 CountStepper = Math.ceil(CountStepper);
-if (CountStepper == 0)
-  CountActive = false;
 var SetTimeOutPeriod = (Math.abs(CountStepper)-1)*1000 + 990;
 putspan(BackColor, ForeColor);
 var dthen = new Date(TargetDate);
