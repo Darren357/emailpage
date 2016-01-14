@@ -1,8 +1,28 @@
-/*
-Author: Robert Hashemian
-http://www.hashemian.com/
-*/
-function calcage(secs, num1, num2) {
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#Tenacity</title>
+    <meta http-equiv="refresh" content="101">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="must-revalidate">
+</head>
+<center>
+<body>
+<h1>
+    <table>
+    <tr><th nowrap>
+    Days since Les Cook emailed the<br>students of Michigan Tech.
+    </th></tr>
+    <tr><td nowrap>
+        <script language="JavaScript" src="datetime.js"></script>
+        <script language="JavaScript">
+            BackColor = "black";
+            ForeColor = "gold";
+            CountActive = true;
+            CountStepper = 1;
+            LeadingZero = true;
+            DisplayFormat = " Roughly %%D%% Days, %%H%% Hours, %%M%% Minutes. ";
+        </script>
+        <script language="JavaScript">function calcage(secs, num1, num2) {
   s = ((Math.floor(secs/num1))%num2).toString();
   if (LeadingZero && s.length < 2)
     s = "0" + s;
@@ -54,4 +74,16 @@ if(CountStepper>0)
 else
   ddiff = new Date(dthen-dnow);
 gsecs = Math.floor(ddiff.valueOf()/1000);
-CountBack(gsecs);
+CountBack(gsecs);</script>
+    </td></tr>
+    </table>
+</h1>
+    <a href="plain.html" target="_blank"><tr><th nowrap>Plain counter.</th></tr></a>
+    <br>
+    <br>
+    <a href="MTU_Tenacity.apk" target="_blank"><tr><th nowrap>Download the Android App.</th></tr></a>
+</body>
+<br><br>Send Questions to:<br>
+<a href="mailto:root@dayssincelescookemailed.me">root@dayssincelescookemailed.me</a>
+</center>
+</html>
