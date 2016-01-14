@@ -1,31 +1,13 @@
 /*
 Author: Robert Hashemian
 http://www.hashemian.com/
-
-Use of this code is hereby granted to anyone. No attribution is required.
-********************************************************
-Usage Sample:
-
-<script language="JavaScript">
-TargetDate = "12/31/2020 5:00 AM";
-BackColor = "palegreen";
-ForeColor = "navy";
-CountActive = true;
-CountStepper = -1;
-LeadingZero = true;
-DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
-FinishMessage = "It is finally here!";
-</script>
-<script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
 */
-
 function calcage(secs, num1, num2) {
   s = ((Math.floor(secs/num1))%num2).toString();
   if (LeadingZero && s.length < 2)
     s = "0" + s;
   return "<b>" + s + "</b>";
 }
-
 function CountBack(secs) {
   if (secs < 0) {
     document.getElementById("cntdwn").innerHTML = FinishMessage;
@@ -40,12 +22,10 @@ function CountBack(secs) {
   if (CountActive)
     setTimeout("CountBack(" + (secs+CountStepper) + ")", SetTimeOutPeriod);
 }
-
 function putspan(backcolor, forecolor) {
  document.write("<span id='cntdwn' style='background-color:" + backcolor + 
                 "; color:" + forecolor + "'></span>");
 }
-
 if (typeof(BackColor)=="undefined")
   BackColor = "white";
 if (typeof(ForeColor)=="undefined")
@@ -62,8 +42,6 @@ if (typeof(CountStepper)!="number")
   CountStepper = -1;
 if (typeof(LeadingZero)=="undefined")
   LeadingZero = true;
-
-
 CountStepper = Math.ceil(CountStepper);
 if (CountStepper == 0)
   CountActive = false;
