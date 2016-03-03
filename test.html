@@ -1,1 +1,56 @@
-<!DOCTYPE html><html><head> <title>#Tenacity</title> <meta http-equiv="refresh" content="101"></head><center><body><h1> <table> <tr><th nowrap> Days since Les Cook emailed the<br>students of Michigan Tech. </th></tr><tr><td nowrap> <script language="JavaScript" src="dt.js"></script> <script language="JavaScript"> BackColor="black"; ForeColor="gold"; CountActive=true; CountStepper=1; LeadingZero=true; DisplayFormat=" Roughly %%D%% Days, %%H%% Hours, %%M%% Minutes. "; FinishMessage=""; </script> <script language="JavaScript">function calcage(secs, num1, num2){s=((Math.floor(secs/num1))%num2).toString(); if (LeadingZero && s.length < 2) s="0" + s; return "<b>" + s + "</b>";}function CountBack(secs){if (secs < 0){document.getElementById("cntdwn").innerHTML=FinishMessage; return;}DisplayStr=DisplayFormat.replace(/%%D%%/g, calcage(secs,86400,100000)); DisplayStr=DisplayStr.replace(/%%H%%/g, calcage(secs,3600,24)); DisplayStr=DisplayStr.replace(/%%M%%/g, calcage(secs,60,60)); DisplayStr=DisplayStr.replace(/%%S%%/g, calcage(secs,1,60)); document.getElementById("cntdwn").innerHTML=DisplayStr; if (CountActive) setTimeout("CountBack(" + (secs+CountStepper) + ")", SetTimeOutPeriod);}function putspan(backcolor, forecolor){document.write("<span id='cntdwn' style='background-color:" + backcolor + "; color:" + forecolor + "'></span>");}CountStepper=Math.ceil(CountStepper);var SetTimeOutPeriod=(Math.abs(CountStepper)-1)*1000 + 990;putspan(BackColor, ForeColor);var dthen=new Date(TargetDate);var dnow=new Date();if(CountStepper>0) ddiff=new Date(dnow-dthen);else ddiff=new Date(dthen-dnow);gsecs=Math.floor(ddiff.valueOf()/1000);CountBack(gsecs);</script> </td></tr></table></h1> <a href="plain.html" target="_blank"><tr><th nowrap>Plain counter.</th></tr></a> <br><br><a href="MTU_Tenacity.apk" target="_blank"><tr><th nowrap>Download the Android App.</th></tr></a></body><br><br>Send Questions to:<br><a href="mailto:root@dayssincelescookemailed.me">root@dayssincelescookemailed.me</a></center></html>
+<!DOCTYPE html>
+<!--
+https://i.imgur.com/snLplqq.jpg?
+-->
+<html>
+<head>
+    <title>#Tenacity</title>
+    <meta http-equiv="refresh" content="101">
+    <!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="must-revalidate"> --> 
+    <link rel="shortcut icon" href="./favicon.ico">
+</head>
+
+<body style="white-space:nowrap;text-align:center">
+<h1>Days since Les Cook emailed the<br/>students of Michigan Tech.<br/>
+        <script language="JavaScript" src="datetime.js"></script>
+        <script language="JavaScript">
+            BackColor = "black";
+            ForeColor = "gold";
+            CountActive = true;
+            CountStepper = 1;
+            LeadingZero = true;
+            DisplayFormat = " Roughly %%D%% Days, %%H%% Hours, %%M%% Minutes. ";
+            FinishMessage = "";
+        </script>
+        <script language="JavaScript" src="countdown.js"></script></h1>
+    <a href="plain.html" target="_blank"><tr><th nowrap>Plain counter.</th></tr></a>
+    <br/>
+    <br/>
+    <a href="MTU_Tenacity.apk" target="_blank"><tr><th nowrap>Download the Android App.</th></tr></a>
+<br><br>Send Questions to:<br>
+<a href="mailto:root@dayssincelescookemailed.me">root@dayssincelescookemailed.me</a>
+<br/><br/><br/><br/><br/><br/>
+	<div style="max-width:548px;margin: 0 auto;">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><noscript>Poor college kid needs money, plz no adblock.</noscript>
+	<!-- Responsive Minimalist -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-1199842799220793"
+	     data-ad-slot="2796115861"
+	     data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74648426-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
